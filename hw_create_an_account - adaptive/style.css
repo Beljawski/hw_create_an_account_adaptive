@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_gray {
+    background: #8080802c;
+    margin: auto;
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container_green {
+    background-color: #A7D7C5;
+    padding: 100px 50px 50px 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_lightgray {
+    border-radius: 49.09px;
+    border: 1.53px solid #f6fbf9;
+    background: #F6FBF9;
+
+    padding: 50px;
+    display: flex;
+    align-items: center
+}
+
+.left {
+    max-width: 558px;
+    max-height: 732px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.right {
+    max-width: 558px;
+    max-height: 732px;
+    padding: 0 25px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.first {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.third {
+    display: flex;
+    justify-content: space-between
+}
+
+.third input {
+    width: 48%;
+    display: flex;
+    justify-content: space-between
+}
+
+.fourth {
+    display: flex;
+    justify-content: space-between
+}
+
+.fourth #vorwahl {
+    width: 20%;
+}
+
+.fourth #handynummer {
+    width: 76%;
+}
+
+input {
+    border: 1.53px solid #0000001A;
+    border-radius: 15px;
+    padding: 10px 0 10px 30px;
+    opacity: 0px;
+    font-family: Karla;
+    font-size: 23.01px;
+    font-weight: 400;
+    line-height: 19.5px;
+
+}
+
+.text_small_info {
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.92px;
+    color: #32403B;
+}
+
+.text_small_help {
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.92px;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+.fourth_help_content {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.fifth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.fifth_content_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    border: 1px solid #0000001A;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.circle:hover {
+    background-color: #A7D7C5;
+}
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 23.01px;
+    border: 1px solid #0000001A;
+    opacity: 0px;
+    background-color: #A7D7C5;
+
+    font-family: Karla;
+    font-size: 33.75px;
+    font-weight: 700;
+    line-height: 43.87px;
+    text-align: center;
+    color: white;
+}
+
+
+.img_big {
+    max-width: 508px;
+    max-height: 732px;
+    border-radius: 10px;
+}
+
+@media(max-width: 700px) {
+    .content {
+        margin: 0;
+    }
+
+    * {
+        gap: 10px;
+    }
+
+    .container_lightgray {
+        padding: 20px 30px;
+    }
+
+    .container_gray {
+        padding: 20px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .container_green {
+        padding: 40px 20px 20px 60px;
+        background: #80808000;
+    }
+
+    .left {
+        max-width: 456px;
+        max-height: 600px;
+    }
+
+    .first {
+        margin: 0;
+        gap: 0;
+    }
+
+    #password {
+        display: none;
+    }
+
+    .third {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third input {
+        width: 100%;
+    }
+    .fourth, .sixth{
+        gap:10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: 10px;
+        padding: 5px 0 5px 15px;
+    }
+
+    .text_small_info,
+    .text_small_help {
+        font-size: 8px;
+        padding-left: 5px;
+        line-height: 10px;
+    }
+
+    .first .text_small_info {
+        padding: 0;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .fifth p {
+        font-size: 8px;
+    }
+
+    button {
+        font-size: 25px;
+        padding: 2px 30px;
+        font-weight: 300;
+        border-radius: 15px;
+    }
+}
